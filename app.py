@@ -13,7 +13,7 @@ text:str = "What is Text Summarization?"
 app = FastAPI()
 
 @app.get("/", tags=["authentication"])
-async def index()
+async def index():
     return RedirectResponse(url="/docs")
 
 
